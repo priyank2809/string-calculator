@@ -10,10 +10,6 @@ describe('StringCalculatorService', () => {
     service = TestBed.inject(StringCalculatorService);
   });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
-
   it('should return 0 for an empty string', () => {
     expect(service.add('')).toBe(0);
   });

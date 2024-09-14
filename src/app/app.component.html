@@ -1,5 +1,6 @@
 <h1>{{ title }}</h1>
-<input [(ngModel)]="input" placeholder="Enter numbers (n1, n2, ...)">
+<!-- <input [(ngModel)]="input" placeholder="Enter numbers (n1, n2, ...)"> -->
+<textarea [(ngModel)]="input" placeholder="Enter numbers (use new lines or commas)" rows="4"></textarea>
 <button (click)="calculate()">Calculate</button>
 <p>Result: {{ result }}</p>
 <p *ngIf="error" style="color: red;">{{ error }}</p>
